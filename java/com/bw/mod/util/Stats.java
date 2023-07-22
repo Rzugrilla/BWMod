@@ -71,18 +71,18 @@ public class Stats implements Comparable<Stats> {
 
     public IChatComponent toMessage() {
 
-        EnumChatFormatting levelColor = (level >= 100) ? EnumChatFormatting.GOLD : EnumChatFormatting.GRAY;
-        EnumChatFormatting fkdrColor = (fkdr >= 3) ? EnumChatFormatting.GOLD : EnumChatFormatting.AQUA;
+        EnumChatFormatting levelColor = (level >= 100) ? EnumChatFormatting.WHITE : EnumChatFormatting.GRAY;
+        EnumChatFormatting fkdrColor = (fkdr >= 3) ? EnumChatFormatting.GOLD : EnumChatFormatting.GRAY;
 
         return new ChatComponentText(
-                EnumChatFormatting.AQUA + "[" + levelColor + level + "\u272B" + EnumChatFormatting.AQUA + "] "
-                        + EnumChatFormatting.AQUA + name + EnumChatFormatting.DARK_AQUA + " | "
-                        + fkdrColor + df2.format(fkdr) + " FKDR" + EnumChatFormatting.DARK_AQUA + " | "
-                        + EnumChatFormatting.AQUA + ( (winstreak != -1) ? (winstreak + " WS") : ("[" + EnumChatFormatting.RED + "HIDDEN" + EnumChatFormatting.AQUA + "] WS") ) + EnumChatFormatting.DARK_AQUA + " | "
-                        + EnumChatFormatting.AQUA + df2.format(wlr)  + " WLR" + EnumChatFormatting.DARK_AQUA + " | "
-                        + EnumChatFormatting.AQUA + finals + " Finals" + EnumChatFormatting.DARK_AQUA + " | "
-                        + EnumChatFormatting.AQUA + wins + " Wins" + EnumChatFormatting.DARK_AQUA + " | "
-                        + EnumChatFormatting.AQUA + losses + " Losses" + EnumChatFormatting.DARK_AQUA);
+                EnumChatFormatting.GRAY + "[" + levelColor + level + "\u272B" + EnumChatFormatting.GRAY + "] "
+                        + EnumChatFormatting.GRAY + name + EnumChatFormatting.DARK_GRAY + " | "
+                        + fkdrColor + df2.format(fkdr) + " FKDR" + EnumChatFormatting.DARK_GRAY + " | "
+                        + EnumChatFormatting.GRAY + ( (winstreak != -1) ? (winstreak + " WS") : ("[" + EnumChatFormatting.RED + "HIDDEN" + EnumChatFormatting.GRAY + "] WS") ) + EnumChatFormatting.DARK_GRAY + " | "
+                        + EnumChatFormatting.GRAY + df2.format(wlr)  + " WLR" + EnumChatFormatting.DARK_GRAY + " | "
+                        + EnumChatFormatting.GRAY + finals + " Finals" + EnumChatFormatting.DARK_GRAY + " | "
+                        + EnumChatFormatting.GRAY + wins + " Wins" + EnumChatFormatting.DARK_GRAY + " | "
+                        + EnumChatFormatting.GRAY + losses + " Losses" + EnumChatFormatting.DARK_GRAY);
     }
 
     @Override
